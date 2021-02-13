@@ -41,9 +41,7 @@ const unsigned char palette[][3] = {
     {255,255,255}
 };
 int main(void) {
-        printf("const uint16_t palette[] = ");
-        printf("{");
-        unsigned int a[37];
+        printf("const uint16_t palette[] = {");
 
         for (int i = 0; i < 37; i++) {
                 uint16_t p = 0;
@@ -62,7 +60,7 @@ int main(void) {
                 }
         }
         printf("};\n\n");
-        //printf("\n\n");
+
         return 0;
 
 }
