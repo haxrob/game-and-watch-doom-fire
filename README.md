@@ -11,6 +11,15 @@ If not done, best to backup the firmware [here](https://github.com/ghidraninja/g
 Compiled image for the Game and Watch [here](https://github.com/x1sec/game-and-watch-doom-fire/releases/download/0.1/doom-fire.zip).
 ## Palette
 
+## Key Bindings
+`up arrow` - zoom close
+
+`down arrow` - zoom wide
+
+`A button` - high heat
+
+`B button` - low heat
+
 Game and Watch LCD is only 12bit RGB, experiment with coverting 24bit RBG down to a 12bit palette:
 ```
 $ gcc gen_palette.c -o gen_palette
