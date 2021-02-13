@@ -36,7 +36,7 @@
 int16_t firePixels[WINDOW_WIDTH * WINDOW_WIDTH]__attribute__((section (".lcd")));
 
 // sampled down from 24bit RGB to 12bit RBG. Need to tweak for better colour
-const uint16_t pallete[] = {0,4096,8192,16384,20736,24832,28928,33280,37376,41728,46080,50176,54272,54528,54528,54528,54528,54784,50688,50944,50944,51200,51200,51200,51456,47360,47360,47616,47616,47616,47616,47872,47872,52224,56576,60928,65280};
+const uint16_t palette[] = {0,4096,8192,16384,20736,24832,28928,33280,37376,41728,46080,50176,54272,54528,54528,54528,54528,54784,50688,50944,50944,51200,51200,51200,51456,47360,47360,47616,47616,47616,47616,47872,47872,52224,56576,60928,65280};
 
 // up arrow changes pixel size
 float pixel_sz;
@@ -115,7 +115,7 @@ void doFire() {
 			spreadFire(y * FIRE_WIDTH + x);
       
       uint16_t intensity = firePixels[x + y * FIRE_WIDTH]; 
-      rect(x*pixel_sz,y*pixel_sz,pixel_sz,pixel_sz,pallete[intensity]);
+      rect(x*pixel_sz,y*pixel_sz,pixel_sz,pixel_sz,palette[intensity]);
 		}
 	}
 }
