@@ -1,9 +1,10 @@
 # Game and Watch Doom PSX Fire
 
 Based on [Fabien Sanglad's blog post](https://fabiensanglard.net/doom_fire_psx/index.html) with a few tweaks. 
+Check out other implementations across a [variety of technology stacks](https://github.com/filipedeschamps/doom-fire-algorithm/).
 
 ## Building
-Clone [Ghidra Ninja's](https://github.com/ghidraninja/) [game-and-watch-base](https://github.com/ghidraninja/game-and-watch-base) and copy over main.c under the path `/Core/Src/`.
+Clone [Ghidra Ninja's](https://github.com/ghidraninja/) [game-and-watch-base](https://github.com/ghidraninja/game-and-watch-base) and copy over `main.c` under the path `/Core/Src/`.
 If not done, best to backup the firmware [here](https://github.com/ghidraninja/game-and-watch-backup) first.
 
 ## Release
