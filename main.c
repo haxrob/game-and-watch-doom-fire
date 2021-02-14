@@ -109,15 +109,13 @@ void spreadFire(uint32_t from) {
 }
 
 void doFire() {
-  
-	for (int x = 0; x < FIRE_WIDTH; x++) {
-		for (int y = 0; y < FIRE_HEIGHT; y++) {		
-			spreadFire(y * FIRE_WIDTH + x);
-      
-      uint16_t intensity = firePixels[x + y * FIRE_WIDTH]; 
-      rect(x*pixel_sz,y*pixel_sz,pixel_sz,pixel_sz,palette[intensity]);
-		}
-	}
+  for (int x = 1; x < FIRE_WIDTH; x++) {
+    for (int y = 1; y < FIRE_HEIGHT; y++) {
+      spreadFire(y * FIRE_WIDTH + x);
+      uint16_t intensity = firePixels[x + y * FIRE_WIDTH];
+      rect( x*pixel_sz, y*pixel_sz, pixel_sz, pixel_sz, palette[intensity] );
+    }
+  }
 }
 
 
